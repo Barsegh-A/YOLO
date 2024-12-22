@@ -6,12 +6,16 @@ Computer Vision Problem Solving Session: YOLOv1
 This repository implements Yolo, specifically [Yolov1](https://arxiv.org/pdf/1506.02640) with training, inference in PyTorch.
 For training [VOC](http://host.robots.ox.ac.uk/pascal/VOC/index.html) dataset is used.
 
+Install required packages by ```pip install -r requirements.txt```
+
 For training you can use the command ```python -m train```. 
 Additionally, you can provide a config file ```python -m train --config_file_path <config_file_path>```. By default, ```configs/config_resnet18.json``` is used.
 
 You can create your custom configs with different sets of hyperparameters and do experiments. 
 
 To track experiments and monitor metrics, run ```mlflow ui --port <port>``` 
+
+Use ```inference.ipynb``` notebook for inference.
 
 ========
 
