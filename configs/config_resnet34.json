@@ -1,0 +1,23 @@
+{
+    "model_config": {
+        "S": 7,
+        "B": 2,
+        "C": 20,
+        "backbone": "resnet34",    
+        "yolo_conv_channels": 1024,
+        "leaky_relu_slope": 0.1,
+        "use_batch_norm": true,
+        "conv_spatial_size": 7,
+        "fc_dim": 1024,
+        "fc_dropout": 0.5,
+        "use_conv": true,
+        "use_sigmoid": true
+    },
+    
+    "learning_rate": 1e-3,
+    "batch_size": 128,
+    "n_epochs": 150,
+    "experiment_name": "yolov1_resnet34",
+    "run_name": "yolov1"
+    
+}
