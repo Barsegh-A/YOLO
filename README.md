@@ -1,5 +1,6 @@
 Applied Statistics and Data Science, Yerevan State University
-Computer Vision Problem Solving Session: YOLOv1
+
+Computer Vision: YOLOv1
 
 ========
 
@@ -8,7 +9,16 @@ For training [VOC](http://host.robots.ox.ac.uk/pascal/VOC/index.html) dataset is
 
 Install required packages by ```pip install -r requirements.txt```
 
+Download the training and validation data:
+```
+mkdir VOC
+cd VOC
+gdown https://drive.google.com/uc?id=1B2J8-mdTjROmFEccmsszhJjcbxI7qx_Z
+tar -xf VOCtrainval_06-Nov-2007.tar
+``` 
+
 For training you can use the command ```python -m train```. 
+
 Additionally, you can provide a config file ```python -m train --config_file_path <config_file_path>```. By default, ```configs/config_resnet18.json``` is used.
 
 You can create your custom configs with different sets of hyperparameters and do experiments. 

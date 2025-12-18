@@ -9,3 +9,4 @@ PyYAML
 albumentations
 mlflow
 pytorch_lightning
+gdown

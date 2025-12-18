@@ -15,7 +15,7 @@ class VOCDataset(Dataset):
         root=root,
         year=year,
         image_set=image_set,
-        download= not os.path.exists(root),
+        download=False,
     )
 
     self.return_all = return_all
